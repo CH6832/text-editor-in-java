@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.christoph.texteditorinjava.TextEditorController">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="New" onAction="#newFile"/>
+                <MenuItem text="Open" onAction="#openFile"/>
+                <MenuItem text="Save" onAction="#saveFile"/>
+                <MenuItem text="Open Folder" onAction="#openFolder"/>
+                <MenuItem text="Exit" onAction="#exit"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <TreeView fx:id="fileTreeView" prefWidth="200"/>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Untitled">
+                <TextArea fx:id="textArea"/>
+            </Tab>
+        </TabPane>
+    </center>
+    <left>
+        <TreeView fx:id="folderTreeView" prefWidth="100"/>
+    </left>
+</BorderPane>

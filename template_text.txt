@@ -1,0 +1,3 @@
+Please provide an example for a suffix array in C++20. The program should consist of a main.cpp file with an example code, a .cpp class and a .h class which contains the data structure. Please add code to make the code understandable and add docstrings.
+
+Please provide a little example program that should cover Inheritance, Composition, Encapsulation and Polymorphism. The program should be in C++ 20 and the main program and the classes and the Interfaces should be displayed in separate files. Add description and comments for a better understanding
