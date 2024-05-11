@@ -4,7 +4,6 @@
 
 This project is a simple text editor application developed in Java using JavaFX for the graphical user interface. The text editor allows users to create new files, open existing files, and save files. It also includes a file explorer feature to browse folders and view their contents.
 
-
 ## :notebook: Features
 
 * Create new text files
