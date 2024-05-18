@@ -2,15 +2,26 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 <BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.christoph.texteditorinjava.TextEditorController">
     <top>
         <MenuBar>
             <Menu text="File">
-                <MenuItem text="New" onAction="#newFile"/>
-                <MenuItem text="Open" onAction="#openFile"/>
-                <MenuItem text="Save" onAction="#saveFile"/>
-                <MenuItem text="Open Folder" onAction="#openFolder"/>
-                <MenuItem text="Exit" onAction="#exit"/>
+                <MenuItem text="New" onAction="#newFile" styleClass="menu-item"/>
+                <MenuItem text="Open" onAction="#openFile" styleClass="menu-item"/>
+                <MenuItem text="Save" onAction="#saveFile" styleClass="menu-item"/>
+                <MenuItem text="Open Folder" onAction="#openFolder" styleClass="menu-item"/>
+                <MenuItem text="Exit" onAction="#exit" styleClass="menu-item"/>
+            </Menu>
+            <Menu text="Edit">
+                <MenuItem text="Undo" onAction="#newRedo" styleClass="menu-item"/>
+                <MenuItem text="Redo" onAction="#newUndo" styleClass="menu-item"/>
+            </Menu>
+            <Menu text="Terminal">
+                <MenuItem text="New Terminal" onAction="#newTerminal" styleClass="menu-item"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About" onAction="#newAbout" styleClass="menu-item"/>
             </Menu>
         </MenuBar>
     </top>
@@ -22,7 +33,14 @@
             </Tab>
         </TabPane>
     </center>
+    <bottom>
+        <!-- Load the console window FXML -->
+        <fx:include source="console-window.fxml"/>
+    </bottom>
+    <!-- <bottom>
+        <VBox fx:id="terminalContainer" prefHeight="300"/>
+    </bottom> -->
     <left>
-        <TreeView fx:id="folderTreeView" prefWidth="100"/>
+        <TreeView fx:id="folderTreeView" prefWidth="400"/>
     </left>
 </BorderPane>

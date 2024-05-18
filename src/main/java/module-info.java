@@ -10,6 +10,7 @@ module com.christoph.texteditorinjava {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires org.fxmisc.richtext;
 
     opens com.christoph.texteditorinjava to javafx.fxml;
     exports com.christoph.texteditorinjava;

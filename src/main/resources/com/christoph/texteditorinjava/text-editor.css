@@ -1,0 +1,41 @@
+/* Apply a modern font to all text */
+.root {
+    -fx-font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+/* Style the menu bar */
+.menu-bar {
+    -fx-background-color: #f0f8ff; /* Very light blue */
+    -fx-text-fill: #FFFFFF; /* White */
+    -fx-font-size: 14px; /* Increase font size */
+}
+
+.menu {
+    -fx-text-fill: #FFFFFF; /* White */
+}
+
+.menu-item {
+    -fx-text-fill: #FFFFFF; /* White */
+    -fx-font-size: 14px; /* Increase font size */
+}
+
+/* Style the main BorderPane */
+.border-pane {
+    -fx-background-color: #ecf0f1; /* Light grey */
+}
+
+/* Style the TreeView for folder navigation */
+.tree-view {
+    -fx-background-color: #bdc3c7; /* Medium grey */
+}
+
+/* Style the TabPane for text editing */
+.tab-pane {
+    -fx-background-color: white;
+}
+
+/* Style the text area */
+.text-area {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
