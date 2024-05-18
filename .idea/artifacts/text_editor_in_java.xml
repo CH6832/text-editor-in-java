@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="text-editor-in-java">
+    <output-path>$PROJECT_DIR$/out/artifacts/text_editor_in_java</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.christoph.texteditorinjava.TextEditorApplication" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="text_editor_in_java.jar">
+        <element id="module-output" name="text-editor-in-java" />
+      </element>
+    </root>
+  </artifact>
+</component>
